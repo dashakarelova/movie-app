@@ -1,0 +1,40 @@
+@import url(./reset.css);
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer_icon {
+    display: flex;
+    align-items: center;
+}
+
+.footer a,
+.footer p {
+    color: #696969;
+}
+
+.footer a:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
