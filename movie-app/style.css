@@ -29,13 +29,16 @@ body {
     color: #FFF;
 }
 
-.header__search {
+.search {
     padding: 8px;
     border-radius: 5px;
 }
 
 .container {
     max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
     flex: 1 0 auto;
 }
@@ -87,12 +90,13 @@ body {
 
 .film__title {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-.film__category {
-    font-size: 14px;
-    color: orange;
+.film:hover .film__title {
+    color: #ff5600;
+    transition: 0.3s;
 }
 
 .film__rating {
@@ -102,25 +106,26 @@ body {
     align-items: center;
     width: 36px;
     height: 36px;
-    bottom: 65px;
+    top: 10px;
     left: 10px;
     right: 0;
     font-size: 14px;
+    font-weight: 600;
     border-radius: 50%;
     color: #FFF;
-    background-color: #696969;
+    background-color: #00000038;
 }
 
-.film__rating-great {
-    border: 2px solid green;
+.green {
+    background-color: #3bb33a;
 }
 
-.film__rating-average {
-    border: 2px solid orange;
+.gray {
+    background-color: #777777;
 }
 
-.film__rating-bad {
-    border: 2px solid red;
+.red {
+    background-color: #ed0100;
 }
 
 .footer {
